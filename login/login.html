@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
@@ -21,12 +22,13 @@
 
     <div id="loginBox" class="container">
         <div class="jumbotron">
+            <h1>Welcome!</h1>
             <!--This is the username location-->
             <div>
                 <label>
                     <b>Username</b>
                 </label>
-                <input id="userName" type="text" placeholder="Enter Username" name="uname" required>
+                <input id="userName" type="text" placeholder="Username or Email" name="uname" required>
             </div>
             <!--this is the password location-->
             <div>
@@ -35,6 +37,7 @@
                 </label>
                 <input id="password" type="password" placeholder="Enter Password" name="psw" required>
             </div>
+            <div class="g-recaptcha" data-sitekey="6LdvkkAUAAAAAHjwO450nD4DjiSELthSvHsUaCwi"></div>
             <div class="container" style="background-color:#f1f1f1">
                 <button id='submitBtn' type="button" class="submitbtn">Submit</button>
                 <span id='passRecover' class="psw">Forgot
