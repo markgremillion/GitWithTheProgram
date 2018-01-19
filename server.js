@@ -4,17 +4,7 @@ var bodyParser = require("body-parser");
 var exphbs  = require('express-handlebars');
 var hbs = exphbs.create({defaultLayout: 'main'});
 
-var PORT = process.env.PORT || 3030;
-
-var app = express();
-
 var db  = require("./models");
-
-// Sets up the Express app to handle data parsing
-
-
-var express = require("express")
-var bodyParser = require("body-parser")
 
 var app= express();
 var PORT = process.env.PORT || 8080;
