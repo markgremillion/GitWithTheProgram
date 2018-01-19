@@ -28,7 +28,6 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
-=======
 
 
 // Static directory
@@ -39,7 +38,7 @@ app.use(express.static("public"));
 
 require("./routes/restaurant-api-routes.js")(app);
 
-require("./routes/api-routes.js")(app);
+// require("./routes/api-routes.js")(app);
 
 require("./routes/html-routes.js")(app);
 
