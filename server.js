@@ -28,7 +28,6 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
-=======
 
 
 // Static directory
