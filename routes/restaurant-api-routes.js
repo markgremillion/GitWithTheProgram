@@ -4,22 +4,22 @@ var db  = require("../models");
 
 module.exports = function(app){
   app.get("/api/restaurants", function(req, res) {
-    db.Burger.findAll({}).then(function(dbBurger){
-      // res.json(dbBurger);
+    db.Restaurant.findAll({}).then(function(dbRestaurant){
+      res.json(dbRestaurant);
       //instead of loading json file, should be rendering the handlebar file
       res.render("index",{
-        Burger: dbBurger
+        Restaurant: dbRestaurant
       });
     });
   });
   
-  app.post("/api/burgers", function(req, res) {
+  app.post("/api/restaurants", function(req, res) {
     db.Burger.create(req.body).then(function(dbBurger){
       res.json(dbBurger);
     })
   });
   
-  app.put("/api/burgers/:id", function(req, res) {
+  app.put("/api/restaurants/:id", function(req, res) {
    db.Burger.update(
      req.body,{
       where:{
