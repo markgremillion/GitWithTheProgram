@@ -195,6 +195,23 @@ code, kbd, samp {font-family:monospace; font-size:110%;}
     #header #search fieldset {width:200px;}
     #header #search legend {display:none;}
 
+#main #header #sign {
+    position: absolute;
+    right: 3%;
+    bottom: 10%;
+}
+#signIn {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fe597c+0,eb0023+100 */
+background: rgb(254,89,124); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(254,89,124,1) 0%, rgba(235,0,35,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(254,89,124,1) 0%,rgba(235,0,35,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(254,89,124,1) 0%,rgba(235,0,35,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe597c', endColorstr='#eb0023',GradientType=0 ); /* IE6-9 */
+border-radius: 5px;
+border-color: rgb(199, 0, 0);
+color: #fac3d1;
+}
+
 /* Main menu (tabs) */
 #tabs {background:#7f000b; margin:0 5px; padding:10px 0 0 0; _height:1px;}
 
@@ -208,4 +225,97 @@ code, kbd, samp {font-family:monospace; font-size:110%;}
     
     /* Main menu (tabs - hover) */
     #tabs ul li a:hover {background:url("../design/tab_hover.gif") 0 0 repeat-x; color:#FFF;}
-    #tabs ul li a:hover span.tab-l {backgroun
+    #tabs ul li a:hover span.tab-l {background:url("../design/tab_hover_l.gif") 0 0 no-repeat;}
+    #tabs ul li a:hover span.tab-r {background:url("../design/tab_hover_r.gif") 100% 0 no-repeat;}
+    
+    /* Main menu (tabs - active) */
+    #tabs ul li#active a {background:#FFF; color:#FF0000;}
+    #tabs ul li#active a span.tab-l {position:absolute; top:0; left:0; _left:-15px; width:8px; height:8px; background:url("../design/tab_active_l.gif") 0 0 no-repeat;}
+    #tabs ul li#active a span.tab-r {position:absolute; top:0; right:0; width:8px; height:8px; background:url("../design/tab_active_r.gif") 100% 0 no-repeat;}
+
+/* Page (2 columns) */
+#page {width:770px; min-height:1px; background:#FFF url("../design/bg_page.gif") 0 0 repeat-y; _height:1px;}
+#page-in {min-height:1px; padding:10px 0; background:url("../design/bg_page_in.jpg") 0 0 no-repeat; _height:1px;}
+
+/* Strip */
+#strip {position:relative; clear:both; padding:3px 20px 10px 20px; color:#ff335e;}
+#strip p {margin:0;}
+#strip a {color:#ff335e;}
+#strip a:hover {color:#7f000b;}
+
+    /* Strip - breadcrumbs search */
+    #strip #breadcrumbs {width:520px; margin:0; padding:0;}
+    
+    /* Strip - RSS */
+
+/* Content */
+#content {float:left; width:530px; _width:550px; margin:0; padding:0 0 0 20px;}
+
+    /* Content - article */
+    #content .article {clear:both; margin:0; padding:20px; background:url("../design/content_article_bg.jpg") 0 0 no-repeat;}
+    #content .article h2 {margin:0 -20px; padding:10px; background:#ffdce1 url("../design/content_title_bg.gif") 0 0 repeat-y; color:#7f000b;}
+    #content .article h2 span {background:url("../design/ico_list.gif") 0 50% no-repeat; padding-left:25px;}
+    
+    #content .article p {text-align:justify;}
+    #content .info {margin:10px 0; padding-bottom:8px; border-bottom:1px solid #ffdce1; color:#ff3360;}
+    #content .info a {color:#ff3360;}
+    #content .info a:hover {color:#FF0000;}
+    
+    #content .info span.date, #content .info span.cat, #content .info span.user, #content .info span.comments {padding-left:15px;}
+    #content .info span.date {background:url("../design/ico_date.gif") 0 50% no-repeat;}
+    #content .info span.cat {background:url("../design/ico_cat.gif") 0 50% no-repeat; margin-left:8px;}
+    #content .info span.user {background:url("../design/ico_user.gif") 0 50% no-repeat; margin-left:8px;}
+    #content .info span.comments {background:url("../design/ico_comments.gif") 0 50% no-repeat; margin-left:8px;}
+
+    /* Content - More */
+    #content .btn-more {margin:0 0 15px 0; padding:0; border:0; position:relative;}
+    #content .btn-more a {display:block; position:absolute; top:0; right:0; width:67px; _width:95px; height:21px; margin:0; padding:0 0 0 28px; background:url("../design/btn_more.gif") 0 0 no-repeat; color:#FFF; text-decoration:none;}
+    #content .btn-more a:hover {background:url("../design/btn_more.gif") -95px 0 no-repeat;}
+
+/* Right column */
+#col {float:left; width:200px; margin:0; padding:0; background:#ffc8d4 url("../design/col_bg.gif") 0 0 repeat-y;}
+#col-in {padding:20px 10px; background:url("../design/col_top.gif") 0 0 no-repeat;}
+#col h3 {padding:13px 15px 14px 15px; margin:0 -10px 15px -10px; background:#ff94ab url("../design/col_title_bg.gif") 0 0 repeat-y; color:#7f000b;}
+
+    /* Right column - About me */
+    #col #about-me {margin-bottom:15px; line-height:130%;}
+    #col #about-me p {margin:0;}
+    #col #about-me #me {float:left; width:54px; height:58px; margin-right:7px;}
+
+    /* Right column - Category */
+    #col ul#category {margin:15px 0; padding:0; list-style:none;}
+    #col ul#category li {margin:0; padding:0; border-bottom:1px solid #ffdbe3;}
+    #col ul#category li a {display:block; padding:3px 0 3px 22px; background:url("../design/ico_archive.gif") 5px 6px no-repeat; text-decoration:none;}
+    #col ul#category li a:hover {background-color:#ffccd8; color:#7f000b;}
+    #col ul#category li#category-active a {background:#ffdbe3 url("../design/ico_archive2.gif") 5px 50% no-repeat; font-weight:bold;}
+    
+    /* Right column - Archive */
+    #col ul#archive {margin:15px 0; padding:0; list-style:none;}
+    #col ul#archive li {margin:0; padding:0; border-bottom:1px solid #ffdbe3;}
+    #col ul#archive li a {display:block; padding:3px 0 3px 22px; background:url("../design/ico_archive.gif") 5px 50% no-repeat; text-decoration:none;}
+    #col ul#archive li a:hover {background-color:#ffccd8; color:#7f000b;}
+    #col ul#archive li#archive-active a {background:#ffdbe3 url("../design/ico_archive2.gif") 5px 6px no-repeat; font-weight:bold;}
+    
+    /* Right column - Links */
+    #col ul#links {margin:15px 0; padding:0; list-style:none;}
+    #col ul#links li {margin:0; padding:0; border-bottom:1px solid #ffdbe3;}
+    #col ul#links li a {display:block; padding:3px 0 3px 22px; background:url("../design/ico_links.gif") 5px 6px no-repeat; text-decoration:none;}
+    #col ul#links li a:hover {background-color:#ffccd8; color:#7f000b;}
+
+/* Footer */
+#footer {position:relative; clear:both; width:770px; height:60px; margin-bottom:50px; background:url("../design/footer.jpg") 0 0 no-repeat; color:#ff3360;}
+#footer a {color:#ff3360;}
+#footer a:hover {color:#7f000b;}
+
+    /* Footer - "back on top" */
+    #top {position:absolute; top:55px; left:550px;}
+    #top p {position:relative; width:30px; height:25px; margin:0; overflow:hidden;}
+    #top p span {display:block; position:absolute; left:0; top:0; z-index:1; width:30px; height:25px; background:url("../design/ico_top.gif") 0 0 no-repeat; cursor:pointer;}
+    #top a:hover span {background:url("../design/ico_top.gif") -30px 0 no-repeat;}
+
+    /*  Footer - copyright */
+    #footer p#copyright {position:absolute; top:10px; left:40px; margin:0;}
+
+    /* Footer - created by */
+    #createdby {position:absolute; top:10px; left:562px; margin:0; color:#ff6587;}
+    #createdby a {color:#ff6587;}
