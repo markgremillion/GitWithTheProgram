@@ -1,50 +1,146 @@
-/*
-    Project: RubyX
-    http://www.kendahlin.com/
-    Based entirely on CrystalX by original author listed below (only the color scheme was changed):
-    URL: http://www.nuvio.cz
-    
-    Output device: screen, projection
-    
-    Author: Vit Dlouhy (vit.dlouhy@nuvio.cz); Nuvio (www.nuvio.cz)
-    Last revision: 2006-12-05, 12:00 GMT+1
-
-    Structure:
-        display | position | float | overflow | width | height | border | margin | padding | background | align | font
-*/
-
 * {min-height:1px;}
-body {border:0; margin:0; padding:0; background:#fff1f3 url("../design/bg.gif") 0 0 repeat-x; font:70%/160% "verdana",sans-serif; color:#7f000b; _text-align:center;}
+body {
+    border:0; 
+    margin:0; 
+    padding:0; 
+    background:#fff1f3 url("../design/bg.gif") 0 0 repeat-x; 
+    font:70%/160% "verdana",sans-serif; 
+    color:#7f000b; _text-align:center;
+}
 
-a {color:#7f000b;}
-a:hover {color:#ff2740;}
+a {
+    color:#7f000b;
+}
 
-p {border:0; margin:15px 0; padding:0;}
+a:hover {
+    color:#ff2740;
+}
 
-div {display:block; border:0; margin:0; padding:0;}
+p {
+    border:0; 
+    margin:15px 0; 
+    padding:0;
+}
 
-h1, h2, h3, h4, h5 {border:0; margin:15px 0 10px 0; padding:0; font-weight:bold;}
-h1 {font-size:260%; line-height:100%; font-family:"georgia",serif; font-weight:normal;}
-h2 {font-size:180%; line-height:100%; font-family:"georgia",serif; font-weight:normal;}
-h3 {font-size:120%; line-height:100%; font-weight:bold;}
-h4 {font-size:120%;}
-h5 {font-size:100%;}
+div {
+    display:block; 
+    border:0; 
+    margin:0; 
+    padding:0;
+}
 
-table {display:table; border-collapse:collapse; margin:15px 0; padding:0; border:1px solid #ffaec0; font-size:100%;}
-tr {display:table-row;}
-th, td {display: table-cell; border:1px solid #ffaec0; margin:0; padding:5px; vertical-align:top; text-align:left;}
-th {background:#ffe5e9; text-align:center; color:#7f000b; font-weight:bold;}
+h1, h2, h3, h4, h5 {
+    border:0; 
+    margin:15px 0 10px 0; 
+    padding:0; 
+    font-weight:bold;
+}
 
-ul, ol {display:block; border:0; margin:15px 0 15px 40px; padding:0;}
-ol {list-style-type:decimal;}
-li {display:list-item; border:0; margin:0; padding:0; _height:1px;}
-ul ul, ul ol, ol ol, ol ul {margin: 0 0 0 20px;}
+h1 {
+    font-size:260%; 
+    line-height:100%; 
+    font-family:"georgia",serif; 
+    font-weight:normal;
+}
 
-dl {border:0; margin:15px 0; padding:0;}
-dt {border:0; margin:0; padding:0; font-weight:bold;}
-dd {border:0; margin:0 0 0 30px; padding:0;}
+h2 {
+    font-size:180%; 
+    line-height:100%; 
+    font-family:"georgia",serif; 
+    font-weight:normal;
+}
 
-form {border:0; margin:0; padding:0;}
+h3 {
+    font-size:120%; 
+    line-height:100%; 
+    font-weight:bold;
+}
+
+h4 {
+    font-size:120%;
+}
+
+h5 {
+    font-size:100%;
+}
+
+table {
+    display:table; 
+    border-collapse:collapse; 
+    margin:15px 0; 
+    padding:0; 
+    border:1px solid #ffaec0; 
+    font-size:100%;
+}
+
+tr {
+    display:table-row;
+}
+
+th, td {
+    display: table-cell; 
+    border:1px solid #ffaec0; 
+    margin:0; 
+    padding:5px; 
+    vertical-align:top; 
+    text-align:left;
+}
+
+th {
+    background:#ffe5e9; 
+    text-align:center; 
+    color:#7f000b; 
+    font-weight:bold;
+}
+
+ul, ol {
+    display:block; 
+    border:0; 
+    margin:15px 0 15px 40px; 
+    padding:0;
+}
+
+ol {
+    list-style-type:decimal;
+}
+
+li {
+    display:list-item; 
+    border:0; 
+    margin:0; 
+    padding:0; 
+    _height:1px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+    margin: 0 0 0 20px;
+}
+
+dl {
+    border:0; 
+    margin:15px 0; 
+    padding:0;
+}
+
+dt {
+    border:0; 
+    margin:0; 
+    padding:0; 
+    font-weight:bold;
+}
+
+dd {
+    border:0; 
+    margin:0 0 0 30px; 
+    padding:0;
+}
+
+form {
+    border:0; 
+    margin:0; 
+    padding:0;
+}
+
 fieldset {border:1px solid #ccc; margin:15px 0; padding:10px;}
 legend {margin-left:10px; font-size:100%; font-weight:bold; color:#008;}
 
@@ -99,24 +195,23 @@ code, kbd, samp {font-family:monospace; font-size:110%;}
     #header #search fieldset {width:200px;}
     #header #search legend {display:none;}
 
-    #main #header #sign {
-        position: absolute;
-        right: 3%;
-        bottom: 10%;
-        
-    }
-    #main #header #sign #signIn{
-        color: #fdcdd7;
-        border-color: #ec0b3c;
-        border-radius: 5px;
-        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff99b2+0,eb0023+100 */
-        background: rgb(255,153,178); /* Old browsers */
-        background: -moz-linear-gradient(top, rgba(255,153,178,1) 0%, rgba(235,0,35,1) 100%); /* FF3.6-15 */
-        background: -webkit-linear-gradient(top, rgba(255,153,178,1) 0%,rgba(235,0,35,1) 100%); /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to bottom, rgba(255,153,178,1) 0%,rgba(235,0,35,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff99b2', endColorstr='#eb0023',GradientType=0 ); /* IE6-9 */
-    }
-    
+#main #header #sign {
+    position: absolute;
+    right: 3%;
+    bottom: 10%;
+}
+#signIn {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fe597c+0,eb0023+100 */
+background: rgb(254,89,124); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(254,89,124,1) 0%, rgba(235,0,35,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(254,89,124,1) 0%,rgba(235,0,35,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(254,89,124,1) 0%,rgba(235,0,35,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fe597c', endColorstr='#eb0023',GradientType=0 ); /* IE6-9 */
+border-radius: 5px;
+border-color: rgb(199, 0, 0);
+color: #fac3d1;
+}
+
 /* Main menu (tabs) */
 #tabs {background:#7f000b; margin:0 5px; padding:10px 0 0 0; _height:1px;}
 
@@ -148,11 +243,11 @@ code, kbd, samp {font-family:monospace; font-size:110%;}
 #strip a {color:#ff335e;}
 #strip a:hover {color:#7f000b;}
 
-    /* Strip - breadcrumbs */
+    /* Strip - breadcrumbs search */
     #strip #breadcrumbs {width:520px; margin:0; padding:0;}
     
     /* Strip - RSS */
-   
+
 /* Content */
 #content {float:left; width:530px; _width:550px; margin:0; padding:0 0 0 20px;}
 
