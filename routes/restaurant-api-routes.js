@@ -7,9 +7,8 @@ module.exports = function(app){
     db.Restaurant.findAll({}).then(function(dbRestaurant){
       res.json(dbRestaurant);
       //instead of loading json file, should be rendering the handlebar file
-      res.render("index",{
-        Restaurant: dbRestaurant
-      });
+
+      
     });
   });
   
