@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style href="../public/style/style.css"></style>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Create an Account</title>
+</head>
+<body>
+    <style>
+
+.imputInfo {
+    margin: 2px 0 2px 0;
+    border-radius: 5px;
+    box-shadow: 3px 3px gray;
+}
+#submitBtn {
+    border-radius: 5px;
+}
+
+        </style>
+    <div class="container">
+        <div id="backgroundJ" class="jumbotron">
+            <h4>Utah Food</h4><hr>
+            <h5>As Utahns we pride ourselves on our food. We have a wide variety of cuisines, anywhere from your sidewalk street tacos to french cuisine! In utah we have it all. Here at Utah Food we want to help you explore your pallet and try something new. So either type in something your in the mood for or let us pick something for you. Please feel free to share your own experiences and discoveries with us.</h5><hr>
+            <h2>Register</h2>
+            <input class="imputInfo" id="createName" type="text" placeholder="Full Name" name="uname" required>
+            <br>
+            <input class="imputInfo" id="createUserName" type="text" placeholder="Choose UserName" name="uname" required>
+            <br>
+            <input class="imputInfo" id="createEmail" type="text" placeholder="Email" name="Email">
+            <br>
+            <input class="imputInfo" id="createPassword" type="password" placeholder="Enter Password" name="psw" required><hr>
+            <!-- <div class="g-recaptcha" data-sitekey="6LdvkkAUAAAAAHjwO450nD4DjiSELthSvHsUaCwi"></div><hr> -->
+            <button id='submitBtn' type="button" class="submitbtn">Create Account</button>
+            <a href="/login">I already have an Account</a>
+        </div>
+    </div>
+    <script src="./assets/js/createacc.js"></script>
+</body>
+</html>
