@@ -6,7 +6,7 @@ $("#submitBtn").on('click', function(event) {
     var userName = $('#createUserName').val().trim()
     var email = $('#createEmail').val().trim()
     var password = $('#createPassword').val().trim()
-  
+    console.log(name,userName, email, password);
     var newUser = {
       name: name, 
       username: userName,

@@ -28,5 +28,12 @@ module.exports = function(app){
        res.json(dbBurger);
      })
   });
+  app.post("/api/signUp", function (req, res) {
+    console.log(req.body)
+    db.users.create(req.body).then(function (dbData) {
+
+      res.json(dbData);
+    });
+  });
 }
 
