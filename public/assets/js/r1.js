@@ -1,11 +1,19 @@
-$("#r1").on("click",function(event){
-    event.preventDefault();
-    $.get("/api/restaurants",function(data){
-        if(data.length !== 0){
-            for (var i = 0; i < data.length; i++) {
-                var row = $("<div>");
-                row.append("<p>"+data[i].name+"</p>");
-            }
-        }
-    })
+$(document).ready(function () {
+
+    
+        $("#r1").on("click", function (event) {
+            event.preventDefault();
+
+            console.log("r1 got clicked!")
+
+            $.get("/api/restaurants",function(req,res){
+                console.log(req.body);
+                
+            })
+
+        })
+
+
 })
+
+
