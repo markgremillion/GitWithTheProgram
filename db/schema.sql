@@ -11,5 +11,6 @@ CREATE TABLE restaurants
 	typeOfFood varchar(255) NOT NULL,
 	rate FLOAT(1),
 	price varchar(255) NOT NULL, 
+	bio varchar(255),
 	PRIMARY KEY (id)
 );
