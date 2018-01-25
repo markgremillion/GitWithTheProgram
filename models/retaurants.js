@@ -4,7 +4,8 @@ module.exports = function(sequelize,Datatypes){
         address: Datatypes.STRING,
         typeOfFood: Datatypes.STRING,
         rate: Datatypes.FLOAT,
-        price: Datatypes.STRING
+        price: Datatypes.STRING,
+        bio: Datatypes.STRING
     })
     return Restaurant;
 }

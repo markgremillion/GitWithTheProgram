@@ -1,0 +1,128 @@
+
+<!-- Main -->
+<div id="main" class="box">
+
+    <!-- Header -->
+    <div id="header">
+
+        <!-- Logotyp -->
+        <h1 id="logo"><a href="./" title="utahFood">Utah Food<span></span></a></h1>
+        <hr class="noscreen" />          
+
+        <!-- Search -->
+        <div id="search" class="noprint">
+            <form action="" method="get">
+                <fieldset><legend>Search</legend>
+                    <label><span class="noscreen">Find:</span>
+                    <span id="search-input-out"><input type="text" name="" id="search-input" size="30" /></span></label>
+                    <input type="image" src="./assets/design/search_submit.gif" id="search-submit" value="OK" />
+                </fieldset>
+            </form>
+        </div> <!-- /search -->
+        <div id="sign">
+            <button id="signIn" type="button" class="btn btn-default"> <a href="/login">Sign In</a></button>
+        </div>
+
+    </div> <!-- /header -->
+
+     <!-- Main menu (tabs) -->
+     <div id="tabs" class="noprint">
+
+            <h3 class="noscreen">Navigation</h3>
+            <ul class="box">
+                <li id="active"><a href="./index.html">All Food<span class="tab-l"></span><span class="tab-r"></span></a></li> <!-- Active -->
+                <li><a href="./chinese.html">Chinese<span class="tab-l"></span><span class="tab-r"></span></a></li>
+                <li><a href="./american.html">American<span class="tab-l"></span><span class="tab-r"></span></a></li>
+                <li><a href="./japanese.html">Japanese<span class="tab-l"></span><span class="tab-r"></span></a></li>
+                <li><a href="./vietnamese.html">Vietnamese<span class="tab-l"></span><span class="tab-r"></span></a></li>
+                <li><a href="./italian.html">Italian<span class="tab-l"></span><span class="tab-r"></span></a></li>
+                <li><a href="./sushi.html">Sushi<span class="tab-l"></span><span class="tab-r"></span></a></li>
+                <li><a href="./other.html">Other<span class="tab-l"></span><span class="tab-r"></span></a></li>
+            </ul>
+
+
+        <hr class="noscreen" />
+     </div> <!-- /tabs -->
+
+    <!-- Page (2 columns) -->
+    <div id="page" class="box">
+    <div id="page-in" class="box">
+
+        <div id="strip" class="box noprint">
+
+            <!-- Breadcrumbs -->
+           
+            
+        </div> <!-- /strip -->
+
+        <!-- Content -->
+        <div id="content">
+
+            <!-- Article -->
+            {{#each restaurants}}
+            <div class="article">
+                <h2 id="r1"><span><a href="./r1.html">{{this.name}}</a></span></h2>
+                <p class="info noprint">
+                    <span class="date">{{this.address}}</span><span class="noscreen">,</span>
+                    <span class="cat"><a href="#">{this.typeOfFood{}}</a></span><span class="noscreen">,</span>
+                    <span class="user"><a href="#">{{this.rate}}</a></span><span class="noscreen">,</span>
+                    <span class="comments"><a href="#">{{this.price}}</a></span>
+                </p>
+
+                <p>{{this.bio}}</p>
+
+                <p class="btn-more box noprint"><strong><a href="#">Continue</a></strong></p>
+            </div> <!-- /article -->
+
+            <hr class="noscreen" />
+
+            
+        </div> <!-- /content -->
+
+        <!-- Right column -->
+        <div id="col" class="noprint">
+            <div id="col-in">
+
+                <!-- About Me -->
+                <h3><span><a href="#">About Us</a></span></h3>
+
+                <div id="about-me">
+                    
+                </div> <!-- /about-me -->
+
+                <hr class="noscreen" />
+
+                <!-- Category -->
+                
+                <!-- Archive -->
+               
+
+                <!-- Links -->
+                <h3><span>Links</span></h3>
+
+                <ul id="links">
+                    <li><a href="#">Something</a></li>
+                    <li><a href="#">Something</a></li>
+                    <li><a href="#">Something</a></li>
+                    <li><a href="#">Something</a></li>
+                    <li><a href="#">Something</a></li>
+                </ul>
+
+                <hr class="noscreen" />
+            
+            </div> <!-- /col-in -->
+        </div> <!-- /col -->
+
+    </div> <!-- /page-in -->
+    </div> <!-- /page -->
+
+    <!-- Footer -->
+    <div id="footer">
+        <div id="top" class="noprint"><p><span class="noscreen">Back on top</span> <a href="#header" title="Back on top ^">^<span></span></a></p></div>
+        <hr class="noscreen" />
+        
+        <p id="createdby">created by <a href="http://www.nuvio.cz">Nuvio | Webdesign</a> <!-- DON´T REMOVE, PLEASE! --></p>
+        <p id="copyright">&copy; 2007 <a href="mailto:my@mail.com">My Name</a> | RubyX by <a href="http://www.kendahlin.com/">Ken Dahlin</a> based entirely on <a href="http://www.nuvio.cz">CrystalX</a></p>
+    </div> <!-- /footer -->
+
+</div> <!-- /main -->
