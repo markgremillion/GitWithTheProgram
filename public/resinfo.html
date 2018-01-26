@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style href="../public/style/style.css"></style>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Resturant</title>
+</head>
+
+<body>
+    <style>
+           #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      #map {
+        height: 500px;
+        width: 500px;
+        margin: 0;
+        padding: 0;
+      }
+        .imputInfo {
+            margin: 2px 0 2px 0;
+            border-radius: 5px;
+            box-shadow: 3px 3px gray;
+        }
+
+        #submitBtn {
+            border-radius: 5px;
+        }
+
+        #des {
+            margin: 7px 0 2px 0;
+        }
+
+        #briefDes {
+            font-size: 15px;
+        }
+        #title{
+            font-size: 40px;
+            margin-bottom: 5px;
+        }
+        #promoCode { 
+            border: 1px solid black;
+            text-align: center;
+            font-size: 25px;
+            color:red;
+        }
+        #titleBar {
+            text-align: center;
+            font-size: 45px;
+            text-shadow: 2px 2px gray;
+        }
+        #backgroundJ{
+            
+        }
+    </style>
+    <div class="container">
+        <div id="backgroundJ" class="jumbotron">
+            <h6 id="titleBar">Utah Food</h6>
+        </div>
+    </div>
+    <div class="container">
+        <div id="infoDiv" class="jumbotron">
+            <div id="title">Yings Thai Sushi</div>
+            <hr>
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="descriptionTitle"><h2>Brief Description:</h2></div>
+                    <h1 id="briefDes"> Thai Resturant in sandy Utah, servers authentic Thai Cusine. Cheff 
+                        has been cooking in multiple Thai Resturants across Bangkok for 22 Years</h1>
+                </div>
+            </div>
+
+            <div id="des" class="row">
+                <div class="col-md-6 ">
+
+                    <p>Price: $$</p>
+                </div>
+            </div>
+            <div id="des" class="row">
+                <div class="col-md-6 ">
+                    <p>Rating: 4.5/5</p>
+                    <p>Number of People voted: 2</p>
+                </div>
+            </div>
+            <div id="des" class="row">
+                <div class="col-md-6 ">
+                    <div id="promotions">
+                            <p>Promotions:</p>
+                        <p>10$ off grubhub Deliveries using code:</p>
+                        <div id="promoCode"><p>RRSL054447X7</p></div>
+                        <a href="">Terms and Conditions</a>
+                    </div>
+                </div>
+            </div>
+            <div id="des" class="row">
+                    <div class="col-md-6 ">
+    
+                    </div>
+                </div>
+                <div id="des" class="row">
+                        <div class="col-md-6 ">
+                                <div id="map"></div>
+                                
+                        </div>
+                    </div>
+        </div>
+    </div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKrLjg-EYwuMwiziWqbS6ExTG0bhv4AgE">
+    </script>
+   <script src="./assets/js/map.js"></script> 
+<!-- -->
+</body>
+
+</html>
