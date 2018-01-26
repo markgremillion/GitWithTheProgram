@@ -5,11 +5,12 @@ var db  = require("../models");
 module.exports = function(app){
   app.get("/api/restaurants", function(req, res) {
     db.Restaurant.findAll({}).then(function(dbRestaurant){
+      console.log(dbRestaurant);
       res.json(dbRestaurant);
       //instead of loading json file, should be rendering the handlebar file
-      res.render("index",{
-        Restaurant: dbRestaurant
-      });
+      // res.render("index",{
+      //   Restaurant: dbRestaurant
+      // });
     });
   });
   
