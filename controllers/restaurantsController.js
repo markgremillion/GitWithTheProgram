@@ -2,15 +2,18 @@ var express = require("express");
 
 var router = express.Router();
 
-var restaurants = require("../models/restaurants.js");
+var db = require("../models");
 
 
 router.get("/", function(req, res) {
-    restaurants.all(function(data) {
+    db.Restaurant.all({}).then(function(data) {
+        console.log("hey im running")
         var hbsObject = {
             restaurant: data
         };
         console.log(hbsObject);
         res.render("index", hbsObject);
-    });
+    })
 });
+
+module.exports = router;

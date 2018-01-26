@@ -59,22 +59,23 @@
         <div id="content">
 
             <!-- Article -->
-            {{#each restaurants}}
-            <div class="article">
-                <h2 id="r1"><span><a href="./r1.html">{{this.name}}</a></span></h2>
-                <p class="info noprint">
-                    <span class="date">{{this.address}}</span><span class="noscreen">,</span>
-                    <span class="cat"><a href="#">{this.typeOfFood{}}</a></span><span class="noscreen">,</span>
-                    <span class="user"><a href="#">{{this.rate}}</a></span><span class="noscreen">,</span>
-                    <span class="comments"><a href="#">{{this.price}}</a></span>
-                </p>
+            {{#each restaurant}}
+                <div class="article">
+                    <h2 id="r1"><span><a href="./r1.html">{{this.name}}</a></span></h2>
+                    <p class="info noprint">
+                        <span class="date">{{this.address}}</span><span class="noscreen">,</span>
+                        <span class="cat"><a href="#">{{this.typeOfFood}}</a></span><span class="noscreen">,</span>
+                        <span class="user"><a href="#">{{this.rate}}</a></span><span class="noscreen">,</span>
+                        <span class="comments"><a href="#">{{this.price}}</a></span>
+                    </p>
 
-                <p>{{this.bio}}</p>
+                    <p>{{this.bio}}</p>
 
-                <p class="btn-more box noprint"><strong><a href="#">Continue</a></strong></p>
-            </div> <!-- /article -->
+                    <p class="btn-more box noprint"><strong><a href="#">Continue</a></strong></p>
+                </div> <!-- /article -->
 
-            <hr class="noscreen" />
+                <hr class="noscreen" />
+            {{/each}}
 
             
         </div> <!-- /content -->

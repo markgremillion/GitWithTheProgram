@@ -2,16 +2,12 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 var cors = require('cors')
-var exphbs  = require('express-handlebars');
-var hbs = exphbs.create({defaultLayout: 'main'});
-
 
 var db  = require("./models");
 
-var app= express();
-var PORT = process.env.PORT || 8080;
+var app = express();
+var PORT = process.env.PORT || 3000;
 
-var db = require("./models");
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -20,8 +16,6 @@ app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 app.use(cors());
 
-app.engine('handlebars', hbs.engine);
-app.set('view engine', 'handlebars');
 
 
 // Static directory
@@ -29,10 +23,16 @@ app.use(express.static("public"));
 
 // Routes
 // =============================================================
+var exphbs = require("express-handlebars");
+
+app.engine("handlebars", exphbs({ defaultLayout: "main" }));
+app.set("view engine", "handlebars");
 
 require("./routes/restaurant-api-routes.js")(app);
 
 require("./routes/html-routes.js")(app);
+var routes = require("./controllers/restaurantsController.js")
+app.use(routes)
 
 // Syncing our sequelize models and then starting our Express app
 // =============================================================
