@@ -1,3 +1,4 @@
+INSERT INTO restaurants (name,address,typeOfFood,rate,price) VALUES ('Hong Kong Tea House','565 W 200 S, Salt Lake City, UT 84101','Dim Sum',4.4,'$$');
 INSERT INTO restaurants (name,address,typeOfFood,rate,price,bio) VALUES ('Lucky 13','135 W 1300 S SLC, UT 84115','American',4.8,'$$', "Fantastic burgers, great drinks, if you're into that kind of thing");
 INSERT INTO restaurants (name,address,typeOfFood,rate,price,bio) VALUES ('Moochies','232 E 800 S SLC, UT 84111','Sandwhiches',4.5,'$', "Best Philly Cheese Steaks you'll have. Great sandwhiches for a reasonable price");
 INSERT INTO restaurants (name,address,typeOfFood,rate,price,bio) VALUES ('Pats BBQ','155 W Commonwealth Ave SLC, UT 84115','BBQ',4.5,'$$', "One of the best atmospheres for any restuarnt.  Make sure you visit when there is live bands");
@@ -17,7 +18,6 @@ INSERT INTO restaurants (name,address,typeOfFood,rate,price,bio) VALUES ("Twigs 
 INSERT INTO restaurants (name,address,typeOfFood,rate,price,bio) VALUES ("Gabor Brothers Main Street Grill & Pizzeria",'197 Main St, Layton, UT 84041','Italian',4.4,'$', "Pizza, calzones, pasta & other hearty Italian eats are served in a low-key, diner-style setting.");
 INSERT INTO restaurants (name,address,typeOfFood,rate,price,bio) VALUES ("Thai Rod Dee",'350 Main St, Layton, UT 84041','Thai',4.5,'$', "Thai Rod Dee was purchased in the Spring of 2015 by new owners Sao and Nang, two friends originally from Thailand with a passion for authentic Thai flavors and friendly service.");
 INSERT INTO restaurants (name,address,typeOfFood,rate,price,bio) VALUES ("Gourmandise The Bakery",'250 300 E, Salt Lake City, UT 84111','Other',4.5,'$', "French-inspired nook with an all-day cafe menu that's renowned for its made-from-scratch desserts.");
-INSERT INTO restaurants (name,address,typeOfFood,rate,price) VALUES ('Hong Kong Tea House','565 W 200 S, Salt Lake City, UT 84101','Dim Sum',4.4,'$$');
 INSERT INTO restaurants (name,address,typeOfFood,rate,price) VALUES ('Sasa Kitchen','2095 E 1300 S','Chinese small plates',4.1,'$');
 INSERT INTO restaurants (name,address,typeOfFood,rate,price) VALUES ('Tea Bar','1201 Wilmington Ave #109','Chinese small plates',4.3,'$');
 INSERT INTO restaurants (name,address,typeOfFood,rate,price) VALUES ("Tosh's Ramen",'1465 State St','Japanese',4.6,'$');
